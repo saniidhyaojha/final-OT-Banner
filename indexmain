@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTrust Cookie Consent Demo</title>
+
+    <!-- Placeholder for OneTrust Test Script -->
+    <!-- Paste your OneTrust Test CDN script here after publishing in OneTrust -->
+    <!-- Example: <script src="https://cdn.cookielaw.org/consent/your-script-id-->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXript>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX-X');
+    </script>
+</head>
+<body>
+    <h1>Welcome to OneTrust Cookie Consent Demo</h1>
+    <p>This page includes third-party content for cookie scanning.</p>
+
+    <!-- YouTube Embed -->
+    <h2>YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picturescreen; picturehref="https://www.facebook.com/sharer/sharer.php?u=https://yourgithubpage.com" target="_><br>
+    <a href="https://twitter.com/intent/tweet?url=https://yourgithubpage.com" target="_<br>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yourgithubpage.com" target="_blank  <!-- Placeholder for OneTrust Cookie Settings Button -->
+    <!-- Paste the "Do Not Sell & Cookie Settings Button" script here -->
+</body>
+</html>
