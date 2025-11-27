@@ -1,191 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTrust Cookie Consent Demo</title>
 
+    <!-- OneTrust Test Script here-->
+    <!-- Example:
+    <script src="https://.org/consent/YOUR-SCRIPT-ID.js</script>
+    -->
 
-  <title>authentication testing demo page</title>
-
-<!-- OneTrust Cookies Consent Notice start for saniidhyaojha.github.io/final-OT-Banner/ -->
-
-<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="019abb4a-c448-7280-85e3-94a6ca4c21ab-test" ></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- OneTrust Cookies Consent Notice end for saniidhyaojha.github.io/final-OT-Banner/ -->
-
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      /* full height centering */
-    }
-
-    .card {
-      background: white;
-      padding: 2.5rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 380px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    h2 {
-      margin-bottom: 2rem;
-      color: #222;
-      font-weight: 600;
-    }
-
-    input {
-      width: 100%;
-      padding: 0.9rem;
-      margin: 0.6rem 0;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font-size: 1rem;
-      outline: none;
-      transition: border 0.2s;
-    }
-
-    input:focus {
-      border-color: #333;
-    }
-
-    button {
-      width: 100%;
-      padding: 0.9rem;
-      margin-top: 1.2rem;
-      background: #333;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #555;
-    }
-
-    .error {
-      color: red;
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-
-    /* Protected content */
-    #content {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 1.5rem;
-      width: 100%;
-      min-height: 100vh;
-      padding: 1rem;
-      box-sizing: border-box;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      aspect-ratio: 16/9;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .logout-btn {
-      background: crimson;
-      max-width: 200px;
-      border-radius: 10px;
-    }
-
-    .logout-btn:hover {
-      background: darkred;
-    }
-  </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanagerXXXXXX-X</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX-X');
+    </script>
 </head>
-
 <body>
-  <!-- Login Form -->
-  <div class="card" id="loginCard">
-    <h2>login info</h2>
-    <input type="text" id="username" placeholder="username" required>
-    <input type="password" id="password" placeholder="password" required>
-    <button onclick="login()">login</button>
-    <div class="error" id="error"></div>
-  </div>
+    <h1>Welcome to OneTrust Cookie Consent Demo</h1>
+    <p>This page includes third-party content for cookie scanning.</p>
 
-  <!-- Protected Content -->
-  <div id="content"></div>
+    <!-- YouTube Embed -->
+    <h2>YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; This Page</h2>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://youre.comShare on Facebook</a><br>
+    https://twitter.com/intent/tweet?url=https://yourgithubpage.comShare on Twitter</a><br>
+    https://www.linkedin.com/shareArticle?mini=true&url=https://yourgithubpage.comShare on LinkedIn</a>
 
-  <script>
-    // Hardcoded UAT users
-    const users = {
-      otUser1: "otUser1",
-      otUser2: "otUser2",
-      otUser3: "otUser3",
-      otUser4: "otUser4",
-      otUser5: "otUser5"
-    };
-
-    console.log(`const users = {
-  otUser1: "otUser1",
-  otUser2: "otUser2",
-  otUser3: "otUser3",
-  otUser4: "otUser4",
-  otUser5: "otUser5"
-}`);
-
-    function login() {
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const errorBox = document.getElementById("error");
-
-      if (users[username] && users[username] === password) {
-        document.getElementById("loginCard").style.display = "none";
-
-        const content = document.getElementById("content");
-        content.style.display = "flex";
-        content.innerHTML = `
-          <iframe 
-            src="https://www.youtube.com/embed/Ag-GXkA9sL0" 
-            allowfullscreen>
-          </iframe>
-          <button class="logout-btn" onclick="logout()">logout</button>
-        `;
-      } else {
-        errorBox.textContent = "Invalid username or password";
-      }
-    }
-
-    function logout() {
-      document.getElementById("content").style.display = "none";
-      document.getElementById("loginCard").style.display = "flex";
-      document.getElementById("username").value = "";
-      document.getElementById("password").value = "";
-      document.getElementById("error").textContent = "";
-    }
-  </script>
-
-
-
+    <!-- OneTrust Cookie Settings Button Placeholder -->
+    <!-- Paste the "Do Not Sell & Cookie Settings Button" script here -->
 </body>
-
 </html>
+
